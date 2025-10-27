@@ -1,0 +1,144 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2, #6b73ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Wrapper */
+.wrapper {
+  width: 400px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.wrapper:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  text-align: center;
+  color: #5a2ca0;
+  margin-bottom: 20px;
+}
+
+/* Input Box */
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #764ba2;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+#addTaskBtn {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background: #764ba2;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#addTaskBtn:hover {
+  background: #5a2ca0;
+}
+
+/* Task List */
+#taskList {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+#taskList li {
+  background: #f5f5f5;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+#taskList li.completed {
+  background: #d1ffd6;
+  text-decoration: line-through;
+  color: #555;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.complete-btn,
+.delete-btn {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 6px 10px;
+  color: white;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.complete-btn {
+  background: #00b894;
+}
+
+.complete-btn:hover {
+  background: #019875;
+}
+
+.delete-btn {
+  background: #ff7675;
+}
+
+.delete-btn:hover {
+  background: #d63031;
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#clearAllBtn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#clearAllBtn:hover {
+  background: #c0392b;
+}
